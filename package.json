@@ -1,6 +1,6 @@
 {
   "name": "appium-ddlog-plugin",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Appium plugin to stream command results to Datadog Log without Datadog Agent",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,11 @@
     "pluginName": "appium-ddlog-plugin",
     "mainClass": "DatadogLogPlugin"
   },
+  "files": [
+    "build",
+    "lib",
+    "index.js"
+  ],
   "peerDependencies": {
     "appium": "^2.0.0-beta.43"
   },
