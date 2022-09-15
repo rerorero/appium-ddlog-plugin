@@ -1,0 +1,52 @@
+{
+  "name": "appium-ddlog-plugin",
+  "version": "0.1.0",
+  "description": "Appium plugin to stream command results to Datadog Log without Datadog Agent",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel lib --root-mode=upward --out-dir=build/lib",
+    "dev": "npm run build -- --watch",
+    "fix": "npm run lint -- --fix",
+    "prepare": "npm run build",
+    "lint": "eslint .",
+    "test": "npm run test:unit",
+    "test:unit": "mocha \"./test/**/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rerorero/appium-ddlog-plugin.git"
+  },
+  "keywords": [
+    "appium",
+    "datadog"
+  ],
+  "author": "rerorero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rerorero/appium-ddlog-plugin/issues"
+  },
+  "homepage": "https://github.com/rerorero/appium-ddlog-plugin#readme",
+  "appium": {
+    "pluginName": "appium-ddlog-plugin",
+    "mainClass": "DatadogLogPlugin"
+  },
+  "peerDependencies": {
+    "appium": "^2.0.0-beta.43"
+  },
+  "devDependencies": {
+    "@appium/eslint-config-appium": "^6.0.4",
+    "@babel/cli": "7.18.10",
+    "@babel/core": "7.18.10",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "7.18.10",
+    "@babel/register": "^7.18.9",
+    "chai": "^4.3.6",
+    "deep-equal-in-any-order": "^2.0.0",
+    "eslint": "^7.32.0",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  },
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
+}
