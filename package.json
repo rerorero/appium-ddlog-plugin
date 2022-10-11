@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@appium/eslint-config-appium": "^6.0.4",
-    "@babel/cli": "7.18.10",
+    "@babel/cli": "7.19.3",
     "@babel/core": "7.18.10",
     "@babel/plugin-transform-runtime": "^7.18.10",
     "@babel/preset-env": "7.19.1",
